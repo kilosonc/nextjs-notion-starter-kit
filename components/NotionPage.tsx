@@ -210,7 +210,7 @@ export function NotionPage({
     [block, recordMap, isBlogPost]
   )
 
-  const footer = React.useMemo(() => <Footer />, [])
+  const footer = React.useMemo(() => <Footer showGiscus={isBlogPost} />, [isBlogPost])
 
   if (router.isFallback) {
     return <Loading />
