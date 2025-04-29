@@ -165,6 +165,7 @@ export function NotionPage({
     () => ({
       nextLegacyImage: Image,
       nextLink: Link,
+      Link,
       Code,
       Collection,
       Equation,
