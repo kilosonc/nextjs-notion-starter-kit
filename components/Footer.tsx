@@ -1,3 +1,4 @@
+import Giscus from '@giscus/react'
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
 import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
@@ -34,6 +35,26 @@ export function FooterImpl() {
   }, [])
 
   return (
+    <>
+    <div
+      className={styles.footer}
+    >
+      <Giscus
+        id="comments"
+        repo="kilosonc/nextjs-notion-starter-kit"
+        repoId="R_kgDOM9lMZQ="
+        category="Announcements"
+        categoryId="DIC_kwDOM9lMZc4Cplhs"
+        mapping="pathname"
+        term="Welcome to @giscus/react component!"
+        reactionsEnabled="1"
+        emitMetadata="0"
+        inputPosition="top"
+        theme="dark"
+        lang="zh-CN"
+        loading="lazy"
+      />
+    </div>
     <footer className={styles.footer}>
       <div className={styles.copyright}>
         Copyright {currentYear} {config.author}
@@ -138,6 +159,7 @@ export function FooterImpl() {
         )}
       </div>
     </footer>
+    </>
   )
 }
 
