@@ -45,14 +45,14 @@ export function FooterImpl(props: { showGiscus?: boolean }) {
             <Giscus
               id="comments"
               repo="kilosonc/nextjs-notion-starter-kit"
-              repoId="R_kgDOM9lMZQ="
+              repoId="R_kgDOM9lMZQ"
               category="Announcements"
               categoryId="DIC_kwDOM9lMZc4Cplhs"
-              mapping="pathname"
+              mapping="og:title"
               term="Welcome to @giscus/react component!"
               reactionsEnabled="1"
               emitMetadata="0"
-              inputPosition="top"
+              inputPosition="bottom"
               theme={isDarkMode ? 'dark' : 'light'}
               lang="zh-CN"
               loading="lazy"
